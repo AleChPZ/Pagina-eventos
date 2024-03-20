@@ -9,7 +9,7 @@
     </head>
     <header>
         <div class="caja">
-                <h1 class="titulo-principal">Eventos el varón</h1>
+                <h1 class="titulo-principal">Eventos ...</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -24,14 +24,14 @@
         <main>
             <section class="servicios">
 
-                <img class="logoServicios" src="img/logo2.png">
+                <img class="logoServicios" src="img/logo-ac.jpg">
                 <h3 class="titulo-general">Servicios disponibles</h3>
                 <div>
                     <ul class="servicios-lista">
                         <li>
                             <h2>Disco móvil</h2>
                             <img class="imagenes-servicios" src="img/DJMesa.jpg">
-                            <p class="paquete-descripcion">Ofrecemos distintos paquetes para una boda inolvidable</p>
+                            <p class="paquetes-servicio">Ofrecemos distintos paquetes para una boda o celebraciones inolvidables</p>
                             <button onclick="agregarServicio('Disco móvil', this)" class="agregar" id="add-dj">Añadir servicio</button>
                             <button onclick="removerServicio('Disco móvil', this)" class="remover" id="remove-dj" style="display: none;">Remover servicio</button>
 
@@ -41,7 +41,7 @@
                         <li>
                             <h2>Maestro de ceremonias</h2>
                             <img class="imagenes-servicios" src="img/MaestroBoda.jpg">
-                            <p class="paquete-descripcion">Ofrecemos mas de 2 paquetes para aquellas celebraciones especiales</p>
+                            <p class="paquetes-servicio">Ofrecemos mas de 2 paquetes para aquellas celebraciones especiales</p>
                             <button onclick="agregarServicio('Maestro de ceremonias', this)" class="agregar" id="add-mc">Añadir servicio</button>
                             <button onclick="removerServicio('Maestro de ceremonias', this)" class="remover" id="remove-mc" style="display: none;">Remover servicio</button>
 
@@ -49,7 +49,7 @@
                         <li>
                             <h2>Decoración</h2>
                             <img class="imagenes-servicios" src="img/DecoracionMesa.jpg">
-                            <p class="paquete-descripcion">Ofrecemos paquetes para celebrar aquellos logros alcanzados</p>
+                            <p class="paquetes-servicio">Ofrecemos paquetes para celebrar aquellos logros alcanzados</p>
                             <button onclick="agregarServicio('Decoración', this)" class="agregar" id="add-decoracion">Añadir servicio</button>
                             <button onclick="removerServicio('Decoración', this)" class="remover" id="remove-decoracion" style="display: none;">Remover servicio</button>
 
@@ -58,7 +58,7 @@
                         <li>
                             <h2>Sillas</h2>
                             <img class="imagenes-servicios" src="img/SillaDecorada.jpg">
-                            <p class="paquete-descripcion">Ofrecemos paquetes para celebrar aquellos logros alcanzados</p>
+                            <p class="paquetes-servicio">Ofrecemos paquetes para celebrar aquellos logros alcanzados</p>
                             <button onclick="agregarServicio('Sillas', this)" class="agregar" id="add-sillas">Añadir servicio</button>
                             <button onclick="removerServicio('Sillas', this)" class="remover" id="remove-sillas" style="display: none;">Remover servicio</button>
 
@@ -67,7 +67,7 @@
                         <li>
                             <h2>Comparsa</h2>
                             <img class="imagenes-servicios" src="img/ComparsaNeon.jpg">
-                            <p class="paquete-descripcion">Ofrecemos paquetes para celebrar aquellos logros alcanzados</p>
+                            <p class="paquetes-servicio">Ofrecemos paquetes para celebrar aquellos logros alcanzados</p>
                             <button onclick="agregarServicio('Comparsa', this)" class="agregar" id="add-comparsa">Añadir servicio</button>
                             <button onclick="removerServicio('Comparsa', this)" class="remover" id="remove-comparsa" style="display: none;">Remover servicio</button>
 
@@ -77,7 +77,7 @@
                         <li>
                             <h2>Photobooth</h2>
                             <img class="imagenes-servicios" src="img/photobooth360.jpg">
-                            <p class="paquete-descripcion">Ofrecemos paquetes para celebrar aquellos logros alcanzados</p>
+                            <p class="paquetes-servicio">Ofrecemos paquetes para celebrar aquellos logros alcanzados</p>
                             <button onclick="agregarServicio('Photobooth', this)" class="agregar" id="add-photobooth">Añadir servicio</button>
                             <button onclick="removerServicio('Photobooth', this)" class="remover" id="remove-Photobooth" style="display: none;">Remover servicio</button>
 
@@ -111,13 +111,26 @@
                   
 
                   <div class="imagen-container">
-                    <img class="centro-mesa" src="img/centro-mesa.jpg">
-                    <p class="motivacion">La vida está llena de momentos dignos de celebración. Cada evento es una oportunidad para crear recuerdos que perdurarán toda la vida. ¡Acompáñanos en la emocionante aventura de celebrar juntos momentos inolvidables!</p>
+                    <img class="centro-mesa" src="img/centro-mesa.jpg" alt="Imagen de fondo">
+                    <div class="texto-superpuesto">
+                        La vida está llena de momentos dignos de celebración. Cada evento es una oportunidad para crear recuerdos que perdurarán toda la vida. ¡Acompáñanos en la emocionante aventura de celebrar juntos momentos inolvidables!
+                    </div>
                   </div>
                   
             </form>
         </main>
         
+        <footer class="footer-contacto">
+            <img class="logo" src="img/logo-ac.jpg">
+            <selection class="info">
+                <p class="localizacion">Turrialba centro</p>
+                <p class="numero">8888-88-88</p>
+                <p class="email">eventos...@gmail.com</p>
+                <hr/>
+                <p class="copyright">&copy 2024 Copyright Ale.CH.P • All Rights Reserved</p>
+            </selection>
+        </footer>
+
     </body>
     <script src="app.js"></script>
 </html>

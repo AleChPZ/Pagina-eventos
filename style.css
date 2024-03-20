@@ -1,6 +1,6 @@
 /*CSS de página index*/
 header {
-    background-color: #BBBBBB;
+    background-color: #F5F5DC;
 }
 .caja{
     width: 940px;
@@ -11,10 +11,10 @@ header {
 
 
 body{
-    background: #BBBBBB;
+    background: #F5F5DC;
 }
 .titulo-principal{
-    color: #87733D;
+    color: #556B2F;
     position:absolute;
     top: 1px;
     font-weight: bold;
@@ -34,13 +34,14 @@ nav li{
 
 nav a{
     text-transform: uppercase;
-    color: #87733D;
+    color: #556B2F;
     font-weight: bold;
     font-size: 18px;
     text-decoration: none;
 }
 nav a:hover{
-    text-decoration: underline #87733D; 
+    text-decoration: underline #D2B48C;
+    color: #D2B48C; 
 }
 
 #perfil{
@@ -79,10 +80,10 @@ nav a:hover{
 }
 
 .titulo-general{
-    color: #000000;
+    color: #556B2F;
     font-weight: bold;
     font-size: 30px;
-    text-decoration: none;
+    text-decoration: underline;
     text-align: center;
 }
 
@@ -90,6 +91,7 @@ nav a:hover{
     width: 940px;
     margin: 0 auto;
     padding: 50px;
+    color: #808000;
 }
 
 
@@ -98,8 +100,9 @@ nav a:hover{
     width: 295px;
     text-align: center;
     box-sizing: border-box;
-    border: 2px solid #000000;
+    border: 2px solid #556B2F;
     border-radius: 10px;
+    font-size: 15px;
 }
 
 .imagenes-paquetes{
@@ -120,7 +123,7 @@ nav a:hover{
 }
 
 .paquetes-lista li:hover{
-    border-color:white;
+    border-color:#D2B48C;
 }
 
 button {
@@ -129,7 +132,7 @@ button {
     margin-right: auto;
     align-items: center;
     background-color: transparent; 
-    color: black; 
+    color: #556B2F; 
     cursor: pointer;
     display: flex;
     font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -141,17 +144,17 @@ button {
     outline: 0;
     border: 0;
     padding: 1rem;
-    border: 2px solid black; 
+    border: 2px solid #556B2F; 
     transition: color 0.42s cubic-bezier(.25,.8,.25,1), border-color 0.42s cubic-bezier(.25,.8,.25,1); 
 }
 
 button:hover {
-    color: white; 
-    border-color: white; 
+    color: #D2B48C; 
+    border-color: #D2B48C; 
 }
 
 button:before {
-    background-color: #fff;
+    background-color: #D2B48C;
     content: "";
     display: inline-block;
     height: 1px;
@@ -161,7 +164,7 @@ button:before {
 }
 
 button:hover:before {
-    background-color: #fff;
+    background-color: #D2B48C;
     width: 3rem;
 }
 
@@ -169,30 +172,67 @@ button:hover:before {
 footer{
     text-align: center;
     height: 150px;
-    background-color: #000000;
+    background-color: #556B2F;
     padding:40px;
 }
 
+.info{
+  display: block;
+  margin-right: 1%;
+  text-align: center;
+}
 .logo{
-    position: relative;
-    margin: 0 auto;
-    bottom: 30px;
-    width: 200px;
+  position: relative;
+  margin-left: 5%;
+  margin-top: auto;
+  bottom: 30px;
+  width: 100px;
+  height: 100px;
+}
+
+.localizacion,.numero,.email{
+  position: relative;
+  display: inline-block;
+  color: white;
+  margin-bottom: -15px;
+  padding-right: 30px;
+}
+.localizacion::before{
+  content: "✔";
+  font-size: 20px;
+  color: white;
+}
+.numero::before{
+  content: "✆";
+  font-size: 20px;
+  color: white;
+}
+
+.email::before{
+  content: "✉";
+  font-size: 20px;
+  color: white;
+}
+
+hr{
+  margin-bottom: 40px;
 }
 
 footer p{
     position: relative;
     bottom: 36px;
     color: #f6f6f6;
-    font-size: 10px;
+    font-size: 20px;
 }
+
 
 /*CSS de página contacto*/
 .logoServicios{
-    margin-left: 36%;
+    margin-left: 38%;
     margin-top: -80px;
-    width: 25%;
-    background-color: #000000;
+    width: 20%;
+    height: 20%;
+    background-color: #000;
     border-radius: 100%;
 }
 
@@ -200,6 +240,7 @@ footer p{
     width: 940px;
     margin: 0 auto;
     padding: 50px;
+    color: #808000;
 }
 
 
@@ -209,8 +250,13 @@ footer p{
     width: 340px;
     text-align: center;
     box-sizing: border-box;
-    border: 2px solid #000000;
+    border: 2px solid #556B2F;
     border-radius: 10px;
+}
+
+.paquetes-servicio{
+  font-size: 15px;
+  color: #808000;
 }
 
 .imagenes-servicios{
@@ -230,6 +276,7 @@ footer p{
 }
 form{
     margin:20px 50px;
+    color: #654321;
 }
 
 form label, form legend{
@@ -293,7 +340,7 @@ form label, form legend{
       -webkit-appearance: button;
       background-color: #000;
       background-image: none;
-      color: #fff;
+      color: #D2B48C;
       cursor: pointer;
       font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
         Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
@@ -301,7 +348,7 @@ form label, form legend{
       font-size: 100%;
       line-height: 1.5;
       margin: 0;
-      -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+      -webkit-mask-image: -webkit-radial-gradient(#000, #D2B48C);
       padding: 0;
     }
     
@@ -335,7 +382,7 @@ form label, form legend{
     }
     
     .enviar span {
-      background: #fff;
+      background: #556B2F;
       color: #000;
       display: grid;
       inset: 0;
@@ -446,24 +493,32 @@ form label, form legend{
         width: 100%;
       }
     }
-/*Fin del boton enviar*/
+/*Imagen container*/
 .imagen-container{
-    position: relative;
-    top: 100px;
+  display: inline-block;
+  position: relative;
+  top: 100px;
 }
 
 .centro-mesa{
-    margin-left: 65%;
-    margin-top: -40%;
-    width: 30%;
-    border-radius: 20px;
-    opacity: 0.6;
+  display: block;
+  margin-left: 200%;
+  margin-top: -150%;
+  width: 80%;
+  border-radius: 20px;
 }
-.motivacion{
-    margin-left: 66%;
-    margin-right: 5%;
-    margin-top: -30%;
-    font-size: 24px;
+.texto-superpuesto{
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(184%, -138%);
+  margin: 10px 10px 10px 10px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo opaco (negro con 50% de opacidad) */
+  color: white; /* Color del texto */
+  padding: 6px 100px;
+  border-radius: 20px;
 }
 
 .imagenes-servicios{
@@ -480,7 +535,7 @@ form label, form legend{
     font-size: 10px;
     align-items: center;
     background-color: transparent; 
-    color: black; 
+    color: #556B2F; 
     cursor: pointer;
     display: flex;
     font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -490,13 +545,34 @@ form label, form legend{
     text-transform: uppercase;
     outline: 0;
     border: 0;
-    border: 2px solid black; 
+    border: 2px solid #556B2F; 
     transition: color 0.42s cubic-bezier(.25,.8,.25,1), border-color 0.42s cubic-bezier(.25,.8,.25,1); 
 }
 
+.remover {
+  margin-right: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 10px;
+  align-items: center;
+  background-color: transparent; 
+  color: #D2B48C; 
+  cursor: pointer;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  border: 2px solid #D2B48C; 
+  transition: color 0.42s cubic-bezier(.25,.8,.25,1), border-color 0.42s cubic-bezier(.25,.8,.25,1); 
+}
+
 .agregar:hover {
-    color: white; 
-    border-color: white; 
+    color: #D2B48C; 
+    border-color: #D2B48C; 
 }
 
 .remover:hover {
@@ -505,12 +581,12 @@ form label, form legend{
 }
 
 .remover:before {
-    background-color: black;
-    color: black;
+    background-color: #D2B48C;
+    color: #D2B48C;
     content: "";
     display: inline-block;
     height: 1px;
-    background-color: black;
+    background-color: #D2B48C;
     content: "";
     display: inline-block;
     height: 1px;
@@ -522,10 +598,15 @@ form label, form legend{
 }
 
 .agregar:hover:before {
-    background-color: #fff;
+    background-color: #D2B48C;
     width: 3rem;
 }
 .remover:hover:before {
     background-color: red;
     width: 3rem;
+}
+
+/*footer contacto*/
+.footer-contacto{
+  margin-top: 30%;
 }
