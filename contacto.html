@@ -32,8 +32,8 @@
                             <h2>Disco móvil</h2>
                             <img class="imagenes-servicios" src="img/DJMesa.jpg">
                             <p class="paquetes-servicio">Ofrecemos distintos paquetes para una boda o celebraciones inolvidables</p>
-                            <button onclick="agregarServicio('Disco móvil', this)" class="agregar" id="add-dj">Añadir servicio</button>
-                            <button onclick="removerServicio('Disco móvil', this)" class="remover" id="remove-dj" style="display: none;">Remover servicio</button>
+                            <button onclick="agregarServicio('Maestro de ceremonias', this)" class="agregar" id="add-mc">Añadir servicio</button>
+                            <button onclick="removerServicio('Disco móvil', this)" class="remover" id="remove-mc" style="display: none;">Remover servicio</button>
 
                         </li>
                         
@@ -85,18 +85,28 @@
                     </ul>
                 </div>
 
+                
+                <button class="boton-agregar" onclick="mostrarVentanaEmergente()">Agregar al carrito</button>
+
+                <div id="ventanaEmergente"      class="ventana-emergente">
+                    <div class="contenido">
+                        <span class="cerrar" onclick="cerrarVentanaEmergente()">&times;</span>
+                    </div>
+                </div>
+
+
             </section>
 
                 
             <form>
                     <div class="input-container">
-                    <label for="correoelectronico">Correo Electrónico</label>
-                    <input type="email" id="correoelectronico" class="input" required placeholder="email@dominio.com">
+                        <label for="correoelectronico">Correo Electrónico</label>
+                        <input type="email" id="correoelectronico" class="input" required placeholder="email@dominio.com">
                     </div>
                 
                     <div class="input-container">
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" class="input" required placeholder="(XXX) XXXX XXXX">
+                     <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" class="input" required placeholder="(XXX) XXXX XXXX">
                     </div>
                 
 
@@ -111,10 +121,10 @@
                   
 
                   <div class="imagen-container">
-                    <img class="centro-mesa" src="img/centro-mesa.jpg" alt="Imagen de fondo">
-                    <div class="texto-superpuesto">
-                        La vida está llena de momentos dignos de celebración. Cada evento es una oportunidad para crear recuerdos que perdurarán toda la vida. ¡Acompáñanos en la emocionante aventura de celebrar juntos momentos inolvidables!
-                    </div>
+                     <img class="centro-mesa" src="img/centro-mesa.jpg" alt="Imagen de fondo">
+                     <div class="texto-superpuesto">
+                        La vida está llena de momentos dignos de celebración. Cada evento es una oportunidad para crear recuerdos que perdurarán toda la vida. ¡Acompáñanos en la   emocionante aventura de celebrar  juntos momentos inolvidables!
+                     </div>
                   </div>
                   
             </form>

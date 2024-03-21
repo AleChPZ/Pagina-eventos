@@ -324,175 +324,47 @@ form label, form legend{
 }
 /*Boton enviar*/
 
-    .enviar,
-    .enviar *,
-    .enviar :after,
-    .enviar :before,
-    .enviar:after,
-    .enviar:before {
-      border: 0 solid;
-      border-radius: 20px;
-      box-sizing: border-box;
-    }
-    
-    .enviar {
-      -webkit-tap-highlight-color: transparent;
-      -webkit-appearance: button;
-      background-color: #000;
-      background-image: none;
-      color: #D2B48C;
-      cursor: pointer;
-      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-        Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
-        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-      font-size: 100%;
-      line-height: 1.5;
-      margin: 0;
-      -webkit-mask-image: -webkit-radial-gradient(#000, #D2B48C);
-      padding: 0;
-    }
-    
-    .enviar:disabled {
-      cursor: default;
-    }
-    
-    .enviar:-moz-focusring {
-      outline: auto;
-    }
-    
-    .enviar svg {
-      display: block;
-      vertical-align: middle;
-    }
-    
-    .enviar [hidden] {
-      display: none;
-    }
-    
-    .enviar {
-      box-sizing: border-box;
-      display: block;
-      font-weight: 900;
-      -webkit-mask-image: none;
-      padding: 2rem 5rem;
-      perspective: 800px;
-      position: relative;
-      text-transform: uppercase;
-      transform-style: preserve-3d;
-    }
-    
-    .enviar span {
-      background: #556B2F;
-      color: #000;
-      display: grid;
-      inset: 0;
-      place-items: center;
-      position: absolute;
-      transform: rotateX(0deg);
-      transform-origin: top center;
-      transition: 0.2s;
-    }
-    
-    .enviar:hover span {
-      transform: rotateX(35deg);
-    }
-    
-    .enviar:after,
-    .enviar:before {
-      background: #ddd;
-      content: "";
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      transform: rotateX(0deg);
-      width: 100%;
-      z-index: -1;
-    }
-    
-    .enviar:after {
-      background: #ccc;
-      width: 0;
-    }
-    
-    .enviar:hover:after {
-      -webkit-animation: progress-bar 1.2s;
-      animation: progress-bar 1.2s;
-    }
-    
-    @-webkit-keyframes progress-bar {
-      0% {
-        opacity: 1;
-        width: 0;
-      }
-    
-      10% {
-        opacity: 1;
-        width: 15%;
-      }
-    
-      25% {
-        opacity: 1;
-        width: 25%;
-      }
-    
-      40% {
-        opacity: 1;
-        width: 35%;
-      }
-    
-      55% {
-        opacity: 1;
-        width: 75%;
-      }
-    
-      60% {
-        opacity: 1;
-        width: 100%;
-      }
-    
-      to {
-        opacity: 0;
-        width: 100%;
-      }
-    }
-    
-    @keyframes progress-bar {
-      0% {
-        opacity: 1;
-        width: 0;
-      }
-    
-      10% {
-        opacity: 1;
-        width: 15%;
-      }
-    
-      25% {
-        opacity: 1;
-        width: 25%;
-      }
-    
-      40% {
-        opacity: 1;
-        width: 35%;
-      }
-    
-      55% {
-        opacity: 1;
-        width: 75%;
-      }
-    
-      60% {
-        opacity: 1;
-        width: 100%;
-      }
-    
-      to {
-        opacity: 0;
-        width: 100%;
-      }
-    }
+.enviar {
+  margin-top: 20px;
+  margin-left: -20px;
+  margin-right: auto;
+  align-items: center;
+  background-color: transparent; 
+  color: #556B2F; 
+  cursor: pointer;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  padding: 1rem;
+  border: 2px solid #556B2F; 
+  transition: color 0.42s cubic-bezier(.25,.8,.25,1), border-color 0.42s cubic-bezier(.25,.8,.25,1); 
+}
+
+.enviar:hover {
+  color: #D2B48C; 
+  border-color: #D2B48C; 
+}
+
+.enviar:before {
+  background-color: #D2B48C;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  margin-right: 10px;
+  transition: all .42s cubic-bezier(.25,.8,.25,1);
+  width: 0;
+}
+
+.enviar:hover:before {
+  background-color: #D2B48C;
+  width: 3rem;
+}
 /*Imagen container*/
 .imagen-container{
   display: inline-block;
@@ -608,5 +480,10 @@ form label, form legend{
 
 /*footer contacto*/
 .footer-contacto{
-  margin-top: 30%;
+  margin-top: 5%;
 }
+
+
+
+
+
