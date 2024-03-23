@@ -1,88 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<header>
-    <div class="caja">
-            <h1 class="titulo-principal">Eventos ...</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <header>
+        <div class="caja">
+            <h1 class="titulo-principal">Eventos</h1>
+             
+            <img class="principal-flor" src="img/flor.png">
+                <nav>
+                     <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+    <section class="banner-container">
 
-</header>
-<section class="banner-container">
+        <img class="banner" src="img/intro.png"></h1>
 
-    <img class="banner" src="img/intro.jpg"></h1>
+    </section>
 
-</section>
+    <section class="introduction-container">
+        <p class="introduction">Creamos<p>
+        <p class="introduction">recuerdos</p>
+        <p class="introduction">inolvidables</p>
+        <p class="flecha">↓</p>
+    </section>
+    <body>
+            <div class="banner-left">
+                <p class="banner-servicios">Servicios</p>
+                <p class="left-down">Haz tu sueño</p>
+                <p class="left-down2">realidad</p>
+                <img class="flor" src="img/flor.png">
+            </div>
+            <section class="button-container">
+             <button onclick="cotizar()" class="button">Más información</button>
+            </section>
+            <div>
+             <img class="right-servicios" src="img/img-home.png">
+            </div>
 
-<section class="introduction-container">
-    <p class="introduction">¡Bienvenidos a “Eventos ...”: Tu Destino para Eventos Inolvidables!
-
-        En “Eventos ...”, nos enorgullece ser tu socio en la organización de momentos memorables. Ya sea que estés planeando una boda mágica, un vibrante quinceañero o una elegante cena de graduación, tenemos el paquete perfecto para ti. Nuestra experiencia de más de 20 años garantiza que cada detalle esté cuidadosamente diseñado para superar tus expectativas.</p>
-</section>
-<body>
-    <section class="paquetes">
-        <h3 class="titulo-general"> Selecciona tu experiencia</h3>
-        <div>
-            <ul class="paquetes-lista">
-                <li>
-                    <h2>Paquete de boda</h2>
-                    <img class="imagenes-paquetes" src="img/wedding.jpg">
-                    <p class="paquete-descripcion">Ofrecemos distintos paquetes para una boda inolvidable</p>
-                    <p class="paquete-precio">$ </p>
-                </li>
-                <li>
-                    <h2>Paquete de quinceañera</h2>
-                    <img class="imagenes-paquetes" src="img/15.jpg">
-                    <p class="paquete-descripcion">Ofrecemos mas de 2 paquetes para aquellas celebraciones especiales</p>
-                    <p class="paquete-precio">$ </p>
-                </li>
-                <li>
-                    <h2>Paquete de graduacion</h2>
-                    <img class="imagenes-paquetes" src="img/Gra.jpg">
-                    <p class="paquete-descripcion">Ofrecemos paquetes para celebrar aquellos logros alcanzados</p>
-                    <p class="paquete-precio">$ </p>
-                </li>
-                
-                <section class="button-container">
-                    <button onclick="cotizar()" class="button">¡Haz clic para crear tu propio paquete!</button>
-                </section>
-
-                <section class="mapa">
+            <section class="mapa">
                     <h3 class="titulo-general">Nuestra Ubicación</h3>
                     <p>Nuestro establecimiento está ubicado en el corazón de la ciudad</p>
     
                     <div class="mapa-contenido">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.3344002927006!2d-83.68678092596134!3d9.90608189019456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0d7e8c87e3129%3A0xaeab3b323dec8fd0!2sParque%20Quesada%20Casal!5e0!3m2!1ses-419!2scr!4v1710806287900!5m2!1ses-419!2scr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
+            </section>
+            <section>
+                <img class="galeria" src="img/galeria-home1.png">
 
-
+                <div class="galeria-right">
+                    <p class="banner-servicios">Galería</p>
+                    <img class="flor2" src="img/flor.png">
+                    <p class="left-down">Recuerdos</p>
+                    <p class="left-down2">inolvidables</p>
+                </div>
+                <section class="galeria-boton">
+                    <button onclick="ver()" class="boton">Ver imágenes</button>
                 </section>
-
-            </ul>
-        </div>
-    </section>
-    <footer>
-        <img class="logo" src="img/logo-ac.jpg">
-        <selection class="info">
-            <p class="localizacion">Turrialba centro</p>
-            <p class="numero">8888-88-88</p>
-            <p class="email">eventos...@gmail.com</p>
-            <hr/>
-            <p class="copyright">&copy 2024 Copyright Ale.CH.P • All Rights Reserved</p>
-        </selection>
-    </footer>
-    <script src="app.js"></script>
-</body>
+            </section>   
+            
+            <footer>
+                <img class="logo" src="img/logo-ac.jpg">
+                <selection class="info">
+                    <p class="localizacion">Turrialba centro</p>
+                    <p class="numero">8888-88-88</p>
+                    <p class="email">eventos...@gmail.com</p>
+                 <hr/>
+                 <p class="copyright">&copy 2024 Copyright Ale.CH.P • All Rights Reserved</p>
+                </selection>
+            </footer>
+            <script src="app.js"></script>
+    </body>
 </html>
