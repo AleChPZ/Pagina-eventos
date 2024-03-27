@@ -1,12 +1,14 @@
-/*CSS de página index*/
+/*Index*/
 header {
     background-color: #F5F5DC;
 }
+
 .caja{
-    width: 940px;
-    height: 100px;
-    position: relative;
-    margin-left: 50px;
+  width: 940px;
+  height: 100px;
+  margin-left: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 100;
 }
 
 
@@ -17,29 +19,28 @@ body{
     color: #556B2F;
     position:absolute;
     top: 1px;
-    font-weight: bold;
+    font-weight: 100;
     font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
 }
 .principal-flor{
   position: absolute;
   display: block;
   width: 30px;
-  margin-top: 30px;
-  margin-left: 13%;
+  margin-top: 12px;
+  margin-left: 12%;
 }
 
 nav{
     position: relative;
-    top: 43.5px;
+    top: 30.5px;
     right: -65%;
 }
 
 nav li{
   display: inline-block;
-  margin: 0 0 0 10px;
-  
-    
+  margin: 0 0 0 20px; 
 }
 
 nav a{
@@ -198,7 +199,8 @@ nav a:hover{
 
 .titulo-general{
   color: #556B2F;
-  font-weight: bold;
+  font-weight: 300;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: 30px;
   text-decoration: underline;
   text-align: center;
@@ -288,6 +290,7 @@ footer{
   height: 250px;
   background-color: #556B2F;
   padding: 50px;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 .info{
@@ -312,7 +315,7 @@ footer{
   padding-right: 30px;
 }
 .localizacion::before{
-  content: "✔";
+  content: "🗸";
   font-size: 20px;
   color: white;
 }
@@ -323,7 +326,7 @@ footer{
 }
 
 .email::before{
-  content: "✉";
+  content: "🖂";
   font-size: 20px;
   color: white;
 }
@@ -340,16 +343,13 @@ footer p{
 }
 
 
-/*CSS de página contacto*/
-.logoServicios{
-    margin-left: 38%;
-    margin-top: -80px;
-    width: 20%;
-    height: 20%;
-    background-color: #000;
-    border-radius: 100%;
-}
+/*Contacto*/
 
+.contacto-intro{
+  margin-left: 70px;
+  font-size: 20px;
+  color: #808000;
+}
 
 .contacto {
     margin: 4em auto;
@@ -364,7 +364,7 @@ form{
     color: #654321;
 }
 
-form label, form legend{
+.label, form legend{
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
@@ -385,6 +385,8 @@ form label, form legend{
 .input-container {
     display: inline-block;
     margin-right: 20px; 
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 15px;
 }
 
 .input {
@@ -396,16 +398,19 @@ form label, form legend{
     box-shadow: none;
     border-radius: 20px;
     border: none;
+    
 }
 
 
-.input-padron{
+.input-pa{
     display: block;
     margin: 10px 10px 20px;
     padding: 10px 25px;
     width: 50%;
     border-radius: 20px;
     border: none;
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 15px; 
 }
 /*Boton enviar*/
 
@@ -483,8 +488,8 @@ form label, form legend{
     height: 250px;
 }
 
-/*Botones de contacto (agregar y remover)*/
 
+/*
 .agregar,.remover {
     margin-right: center;
     margin-bottom: 10px;
@@ -562,25 +567,27 @@ form label, form legend{
     background-color: red;
     width: 3rem;
 }
-
+*/
 /*footer contacto*/
 .footer-contacto{
   margin-top: 5%;
 }
 
-/*CSS servicios*/
+/*Servicios*/
 .inicio{
   color: #556B2F;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   font-family: "Courier New", Courier, monospace;
 }
 
-/*servicios*/
 .servicios-bodaH3{
   text-align: center;
   font-size: 30px;
   color: #808000;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 100;
+  letter-spacing: 4px;
 }
 .contenedor-boda{
   display: flex;
@@ -616,6 +623,9 @@ h4{
   text-align: center;
   font-size: 30px;
   color: #808000;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 100;
+  letter-spacing: 4px;
 }
 .img-privado{
   margin-left: 20%;
@@ -638,6 +648,9 @@ h4{
   text-align: center;
   font-size: 30px;
   color: #808000;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 100;
+  letter-spacing: 4px;
 }
 .img-empresa{
   margin-left: 20%;
@@ -692,6 +705,14 @@ h4{
 }
 
 /*Galeria*/
+.galeria-tittle{
+  display: block;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #808000;
+  text-align: center;
+  letter-spacing: 4px;
+}
 *{
   box-sizing: border-box;
 }
@@ -733,6 +754,7 @@ margin-top: 5px;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 400;
   color: #808000;
+  letter-spacing: 4px;
 }
 .info-ana{
   display: block;
@@ -827,4 +849,189 @@ margin-top: 5px;
   width: 30%;
   height: 30%;
   margin-left: 15px;
+}
+
+/*Reserva*/
+.reserva{
+  display: block;
+  font-size: 30px;
+  text-align: center;
+  color: #808000;
+}
+.seleccione{
+  display: flex;
+  gap: 30px;
+  margin-left: 36%;
+  margin-top: 90px;
+  margin-bottom: 30px;
+ font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size:14px;
+}
+
+.seleccione {
+  text-align: center;
+}
+.a{
+  text-decoration: none;
+  color: #556B2F;
+  cursor: pointer;
+}
+.a:hover{
+  text-decoration:  2px underline #654321;
+  color: #654321; 
+}
+
+
+.seleccione-btn{
+  display: block;
+  position: absolute;
+  width: 27%;
+  margin-top: -45px;
+  margin-left: 34.5%;
+}
+.linea-1{
+  width: 70%;
+  margin-top: 6%;
+}
+.linea-2{
+  width: 70%;
+  margin-top: 4%;
+}
+.linea-3{
+  width: 70%;
+  margin-top: 4%;
+}
+.linea-4{
+  width: 70%;
+  margin-top: 4%;
+}
+
+.img-reservaBoda{
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: 15%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.selec-paquete{
+  display: block;
+  margin-left: 25%;
+  margin-top: -7%;
+  font-size: 20px;
+  color: #556B2F;
+}
+.selec-hora{
+  display: block;
+  margin-top: -4.5%;
+  margin-left: 55%;
+  font-size: 20px;
+  color: #654321;
+}
+.selec-precio{
+  display: block;
+  margin-top: 10px;
+  margin-left: 55%;
+  font-size: 20px;
+  color: #654321;
+}
+
+.reserva-btn1{
+  position: absolute;
+  display: block;
+  margin-top: -5%;
+  margin-left: 75.5%;
+  align-items: center;
+  background-color: transparent; 
+  color: #D2B48C; 
+  cursor: pointer;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  padding: 1rem;
+  border: 2px solid #D2B48C; 
+  transition: color 0.42s cubic-bezier(.25,.8,.25,1), border-color 0.42s cubic-bezier(.25,.8,.25,1); 
+}
+
+.reserva-btn1:hover {
+  color:  #556B2F; 
+  border-color:  #556B2F; 
+}
+
+.reserva-btn1:before {
+  background-color:  #556B2F;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  margin-right: 5px;
+  transition: all .42s cubic-bezier(.25,.8,.25,1);
+  width: 0;
+}
+
+.reserva-btn1:hover:before {
+  background-color:  #556B2F;
+  width: 1rem;
+}
+
+/*Tinerario*/
+.tinerario-btn2{
+  position: absolute;
+  display: block;
+  margin-top: 5px;
+  margin-left: 5%;
+  align-items: center;
+  background-color: transparent; 
+  color: #D2B48C; 
+  cursor: pointer;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  padding: 1rem;
+  border: 2px solid #D2B48C; 
+  transition: color 0.42s cubic-bezier(.25,.8,.25,1), border-color 0.42s cubic-bezier(.25,.8,.25,1); 
+}
+
+.tinerario-btn2:hover {
+  color:  #556B2F; 
+  border-color:  #556B2F; 
+}
+
+.tinerario-btn2:before {
+  background-color:  #556B2F;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  margin-right: 5px;
+  transition: all .42s cubic-bezier(.25,.8,.25,1);
+  width: 0;
+}
+
+.tinerario-btn2:hover:before {
+  background-color:  #556B2F;
+  width: 1rem;
+}
+
+.tinerario-tittle{
+  display: block;
+  margin-top: 10%;
+  margin-left: 5%;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #808000;
+}
+.tinerario-mensaje{
+  display: block;
+  margin-left: 5%;
 }

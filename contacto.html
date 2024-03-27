@@ -26,22 +26,27 @@
         <main>
                 
             <form>
+                    <div class="contacto-intro">
+                        <p>Rellena este formulario y nos pondremos en contacto contigo</p>
+                    </div>
                     <div class="input-container">
-                        <label for="correoelectronico">Correo Electrónico</label>
+                        <label for="correoelectronico">Introduce tu email*</label>
                         <input type="email" id="correoelectronico" class="input" required placeholder="email@dominio.com">
                     </div>
                 
                     <div class="input-container">
-                     <label for="telefono">Teléfono</label>
+                     <label for="telefono">Introduce tu teléfono*</label>
                         <input type="tel" id="telefono" class="input" required placeholder="(XXX) XXXX XXXX">
                     </div>
                 
+                    <div class="input-pa">
 
-                    <label for="nombreapellido">Nombre y Apellido</label>
-                    <input type="text" id="nombreapellido" class="input-padron" required>
-                
-                  <label for="mensaje">Mensaje</label>
-                  <textarea cols="70" rows="10" id="mensaje"class="input-padron" required></textarea> 
+                        <label for="nombreapellido">Introduce tu nombre y apellido*</label>
+                        <input type="text" id="nombreapellido" class="input" required>
+                    
+                      <label for="mensaje">Escribe tu mensaje aquí*</label>
+                      <textarea cols="70" rows="10" id="mensaje"class="input" required></textarea> 
+                    </div>
 
                   <button class="enviar"><span>Enviar paquete</span></button>
 
